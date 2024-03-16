@@ -1,9 +1,13 @@
+import Header from "./components/Header";
+import Recipes from "./components/Recipes";
+
 function App() {
 
   return (
-    <>
-      <h1 className="text-6xl">This is react</h1>
-    </>
+    <div className="container mx-auto px-4">
+      <Header />
+      <Recipes />
+    </div>
   )
 }
 
