@@ -1,6 +1,6 @@
 [
     {
-      "recipe_image": "path/to/image1.jpg",
+      "recipe_image": "https://i.ibb.co/F8jpHSS/recipe6.jpg",
       "recipe_id": "001",
       "recipe_name": "Spicy Basil Chicken Stir-Fry",
       "short_description": "A flavorful Thai-inspired dish with tender chicken and aromatic basil.",
@@ -14,7 +14,7 @@
       "calories": "320 calories"
     },
     {
-      "recipe_image": "path/to/image2.jpg",
+      "recipe_image": "https://i.ibb.co/QfX7mng/recipe5.jpg",
       "recipe_id": "002",
       "recipe_name": "Vegetable Pad Thai",
       "short_description": "A classic Thai noodle dish packed with colorful veggies and peanuts.",
@@ -29,7 +29,7 @@
       "calories": "280 calories"
     },
     {
-      "recipe_image": "path/to/image3.jpg",
+      "recipe_image": "https://i.ibb.co/hRZfYBW/recipe4.jpg",
       "recipe_id": "003",
       "recipe_name": "Mushroom Risotto",
       "short_description": "A creamy and comforting Italian rice dish with earthy mushrooms.",
@@ -44,7 +44,7 @@
       "calories": "350 calories"
     },
     {
-      "recipe_image": "path/to/image4.jpg",
+      "recipe_image": "https://i.ibb.co/TYX4cF2/recipe3.jpg",
       "recipe_id": "004",
       "recipe_name": "Greek Salad",
       "short_description": "A refreshing and vibrant salad featuring crisp cucumbers, juicy tomatoes, and tangy feta cheese.",
@@ -59,7 +59,7 @@
       "calories": "180 calories"
     },
     {
-      "recipe_image": "path/to/image5.jpg",
+      "recipe_image": "https://i.ibb.co/NY5xWRB/recipe2.jpg",
       "recipe_id": "005",
       "recipe_name": "Homemade Pizza",
       "short_description": "A delicious and customizable pizza with a crispy crust and savory toppings.",
@@ -74,7 +74,7 @@
       "calories": "400 calories"
     },
     {
-      "recipe_image": "path/to/image6.jpg",
+      "recipe_image": "https://i.ibb.co/zfCjHmS/recipe1.jpg",
       "recipe_id": "006",
       "recipe_name": "Chocolate Chip Cookies",
       "short_description": "Soft and chewy cookies loaded with gooey chocolate chips.",
