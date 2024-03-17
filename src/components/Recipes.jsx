@@ -28,7 +28,7 @@ const Recipes = () => {
         <div>
             <h1 className="text-4xl font-semibold text-center mt-20">Our Recipes</h1>
             <p className="text-center mt-6 mb-12 px-4 lg:px-24">Explore our restaurant&#39;s diverse array of recipes, crafted with care and passion. From succulent steaks to tantalizing pastas, each dish promises a culinary adventure. Indulge in flavors that will leave you craving for more.</p>
-            <div className="grid grid-cols-12 gap-5">
+            <div className="grid grid-cols-12 gap-5 mb-20">
                 <div className="col-span-12 lg:col-span-7">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                         {
