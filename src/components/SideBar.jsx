@@ -1,10 +1,20 @@
 import PropTypes from 'prop-types';
+import WantCookItem from './WantCookItem';
+import { useState } from 'react';
+import CookingItem from './CookingItem';
 
-const SideBar = () => {
+const SideBar = ({wantCook, setWantCook}) => {
+    const [cooking, setCooking] = useState([]);
+    const handlePrepare = (item) => {
+        const sameItem = wantCook.find(recipe => recipe.recipe_id === item.recipe_id);
+        const others = wantCook.filter(recipe => recipe.recipe_id !== item.recipe_id);
+        setWantCook(others);
+        setCooking([...cooking, sameItem]);
+    };
     return (
         <div className="card bg-base-100 shadow-xl">
             <div className="card-body">
-                <h2 className="text-center text-2xl font-semibold">Want to Cook:</h2>
+                <h2 className="text-center text-2xl font-semibold">Want to Cook: {wantCook.length}</h2>
                 <div className='px-16'><hr /></div>
                 <div className="overflow-x-auto">
                     <table className="table table-zebra">
@@ -18,27 +28,28 @@ const SideBar = () => {
                             </tr>
                         </thead>
                         <tbody>
+                           {
+                            wantCook.map((item, idx) => <WantCookItem key={item.recipe_id} idx={idx} recipe={item} handlePrepare={handlePrepare} />)
+                           }
+                        </tbody>
+                    </table>
+                </div>
+                <h2 className="text-center text-2xl font-semibold mt-5">Currently Cooking: {cooking.length}</h2>
+                <div className='px-16'><hr /></div>
+                <div className="overflow-x-auto">
+                    <table className="table table-zebra">
+                        <thead>
                             <tr>
-                                <th>1</th>
-                                <td>Cy Ganderton</td>
-                                <td>Quality Control Specialist</td>
-                                <td>Blue</td>
-                                <td><button className="btn btn-sm rounded-full bg-[#0BE58A] border-0 mt-4">Prepare</button></td>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Time</th>
+                                <th>Calories</th>
                             </tr>
-                            <tr>
-                                <th>2</th>
-                                <td>Hart Hagerty</td>
-                                <td>Desktop Support Technician</td>
-                                <td>Purple</td>
-                                <td><button className="btn btn-sm rounded-full bg-[#0BE58A] border-0 mt-4">Prepare</button></td>
-                            </tr>
-                            <tr>
-                                <th>3</th>
-                                <td>Brice Swyre</td>
-                                <td>Tax Accountant</td>
-                                <td>Red</td>
-                                <td><button className="btn btn-sm rounded-full bg-[#0BE58A] border-0 mt-4">Prepare</button></td>
-                            </tr>
+                        </thead>
+                        <tbody>
+                           {
+                            cooking.map((item, idx) => <CookingItem key={item.recipe_id} idx={idx} recipe={item} />)
+                           }
                         </tbody>
                     </table>
                 </div>
@@ -48,7 +59,8 @@ const SideBar = () => {
 };
 
 SideBar.propTypes = {
-    
+    wantCook: PropTypes.array.isRequired,
+    setWantCook: PropTypes.func.isRequired,
 };
 
 export default SideBar;

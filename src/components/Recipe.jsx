@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Recipe = ({recipe}) => {
+const Recipe = ({recipe, handleCook}) => {
     const {recipe_image, recipe_name, short_description, ingredients, preparing_time, calories} = recipe;
     return (
         <div className="card bg-base-100 shadow-xl">
@@ -21,16 +21,16 @@ const Recipe = ({recipe}) => {
                         <span className="material-symbols-outlined">
                             schedule
                         </span>
-                        <p>{preparing_time}</p>
+                        <p>{preparing_time} minutes</p>
                     </div>
                     <div className='flex gap-2'>
                         <span className="material-symbols-outlined">
                             local_fire_department
                         </span>
-                        <p>{calories}</p>
+                        <p>{calories} calories</p>
                     </div>
                 </div>
-                <button className="btn rounded-full bg-[#0BE58A] lg:text-lg border-0 mt-4 max-w-40">Want to Cook</button>
+                <button onClick={() => handleCook(recipe)} className="btn rounded-full bg-[#0BE58A] lg:text-lg border-0 mt-4 max-w-40">Want to Cook</button>
             </div>
         </div>
     );
@@ -38,6 +38,7 @@ const Recipe = ({recipe}) => {
 
 Recipe.propTypes = {
     recipe: PropTypes.object.isRequired,
+    handleCook: PropTypes.func.isRequired,
 };
 
 export default Recipe;

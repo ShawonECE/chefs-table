@@ -10,8 +10,8 @@
         "200 g basil leaves",
         "400 g mushroom"
       ],
-      "preparing_time": "30 min",
-      "calories": "320 calories"
+      "preparing_time": 30,
+      "calories": 320
     },
     {
       "recipe_image": "https://i.ibb.co/QfX7mng/recipe5.jpg",
@@ -25,8 +25,8 @@
         "100 g bean sprouts",
         "50 g peanuts"
       ],
-      "preparing_time": "25 min",
-      "calories": "280 calories"
+      "preparing_time": 25,
+      "calories": 280
     },
     {
       "recipe_image": "https://i.ibb.co/hRZfYBW/recipe4.jpg",
@@ -40,8 +40,8 @@
         "2 cloves garlic",
         "1 liter vegetable broth"
       ],
-      "preparing_time": "40 min",
-      "calories": "350 calories"
+      "preparing_time": 40,
+      "calories": 350
     },
     {
       "recipe_image": "https://i.ibb.co/TYX4cF2/recipe3.jpg",
@@ -55,8 +55,8 @@
         "1 red onion",
         "100 g olives"
       ],
-      "preparing_time": "15 min",
-      "calories": "180 calories"
+      "preparing_time": 15,
+      "calories": 180
     },
     {
       "recipe_image": "https://i.ibb.co/NY5xWRB/recipe2.jpg",
@@ -70,8 +70,8 @@
         "1 bell pepper",
         "1 onion"
       ],
-      "preparing_time": "35 min",
-      "calories": "400 calories"
+      "preparing_time": 35,
+      "calories": 400
     },
     {
       "recipe_image": "https://i.ibb.co/zfCjHmS/recipe1.jpg",
@@ -85,8 +85,8 @@
         "100 g chocolate chips",
         "1 egg"
       ],
-      "preparing_time": "20 min",
-      "calories": "200 calories"
+      "preparing_time": 20,
+      "calories": 200
     }
   ]
   
